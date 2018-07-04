@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="5">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background-color: transparent;
+            padding: 10px;
+            font-size: 19px;
+            box-shadow: 4px 1px;
+            /* border: 1px solid purple; */
+        }
+
+        #logo-container {
+            /* border: 1px solid grey; */
+            transform: rotate(-35deg);
+        }
+
+        #logo-container {
+            float: left;
+            z-index: -100;
+            margin-top: -24px;
+            margin-right: -20px;
+        }
+
+        #tagline-container {
+            vertical-align: middle;
+            border: 1px solid transparent;
+            display: inline;
+            z-index: 999;
+        }
+
+        #amp-container {
+            text-align: center;
+            vertical-align: middle;
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 24px;
+        }
+
+        #products-container {
+            margin: 20px auto;
+            max-width: 1150px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .product {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 260px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .product:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .product-desc-container {
+            padding: 2px 16px;
+        }
+
+        .rating-container {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .rating-star-container {
+            padding: 4px;
+            background-color: #2e7d32;
+            border-radius: 4px;
+            color: #ffffff;
+            display: inline-block;
+        }
+
+        .rating-by-container {
+            color: gray;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <img id="logo-container" height="100" width="150" src="./logo.jpg" />
+            </div>
+
+            <div id="tagline-container">
+                <p>
+                    Sneakers
+                    <span id="amp-container">
+                        &amp;
+                    </span>
+                    Code
+                </p>
+            </div>
+        </header>
+
+        <div id="products-container">
+
+            <div class="product">
+                <img src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70"
+                />
+                <div class="product-desc-container">
+                    <h4>
+                        Nike
+                    </h4>
+                    <div>
+                        <div class="rating-container">
+                            <span class="rating-star-container">
+                                3.9
+                                <i class="fa fa-star "></i>
+                            </span>
+                            <span class="rating-by-container">
+                                &nbsp; (311)
+                            </span>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product ">
+                <img src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70 "
+                />
+                <div class="product-desc-container ">
+                    <h4>
+                        Nike
+                    </h4>
+                    <p>
+                        Somethhing about the product
+                    </p>
+                </div>
+            </div>
+
+            <div class="product ">
+                <img src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70 "
+                />
+                <div class="product-desc-container ">
+                    <h4>
+                        Nike
+                    </h4>
+                    <p>
+                        Somethhing about the product
+                    </p>
+                </div>
+            </div>
+
+            <div class="product ">
+                <img src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70 "
+                />
+                <div class="product-desc-container ">
+                    <h4>
+                        Nike
+                    </h4>
+                    <p>
+                        Somethhing about the product
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
