@@ -1,1 +1,1 @@
-# seakers-and-code
+# sneakers-and-code
