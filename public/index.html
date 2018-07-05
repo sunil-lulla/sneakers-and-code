@@ -1,7 +1,6 @@
 <html>
 
 <head>
-    <meta http-equiv="refresh" content="5">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -51,9 +50,10 @@
 
         #products-container {
             margin: 20px auto;
-            max-width: 1150px;
-            border: 1px solid red;
+            max-width: 930px;
+            /* border: 1px solid red; */
             padding: 10px;
+
         }
 
         .product {
@@ -63,6 +63,11 @@
             cursor: pointer;
             display: inline-block;
             margin: 10px;
+            padding: 10px;
+        }
+
+        .product-lst-banner-container {
+            padding: 5px;
         }
 
         .product:hover {
@@ -71,6 +76,8 @@
 
         .product-desc-container {
             padding: 2px 16px;
+            margin-top: 10px;
+
         }
 
         .rating-container {
@@ -91,11 +98,21 @@
             font-size: 15px;
             font-weight: 300;
         }
+
+        .price-container {
+            margin: 8px 0px;
+            font-size: 14px;
+            font-weight: bold;
+        }
     </style>
 
 </head>
 
 <body>
+    <div id="main">
+
+    </div>
+
     <div id="container">
         <header>
             <div>
@@ -116,12 +133,12 @@
         <div id="products-container">
 
             <div class="product">
-                <img src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70"
+                <img class="product-lst-banner-container" src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70"
                 />
                 <div class="product-desc-container">
-                    <h4>
-                        Nike
-                    </h4>
+                    <h5>
+                        Nike NIKE COURT ROYALE Sneakers For Men
+                    </h5>
                     <div>
                         <div class="rating-container">
                             <span class="rating-star-container">
@@ -132,8 +149,61 @@
                                 &nbsp; (311)
                             </span>
                         </div>
-                        <div>
+                        <div class="price-container">
+                            <i class="fa fa-inr"></i>
+                            <span>2520</span>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="product-lst-banner-container" src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70"
+                />
+                <div class="product-desc-container">
+                    <h5>
+                        Nike NIKE COURT ROYALE Sneakers For Men
+                    </h5>
+                    <div>
+                        <div class="rating-container">
+                            <span class="rating-star-container">
+                                3.9
+                                <i class="fa fa-star "></i>
+                            </span>
+                            <span class="rating-by-container">
+                                &nbsp; (311)
+                            </span>
+                        </div>
+                        <div class="price-container">
+                            <i class="fa fa-inr"></i>
+                            <span>2520</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="product-lst-banner-container" src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70"
+                />
+                <div class="product-desc-container">
+                    <h5>
+                        Nike NIKE COURT ROYALE Sneakers For Men
+                    </h5>
+                    <div>
+                        <div class="rating-container">
+                            <span class="rating-star-container">
+                                3.9
+                                <i class="fa fa-star "></i>
+                            </span>
+                            <span class="rating-by-container">
+                                &nbsp; (311)
+                            </span>
+                        </div>
+                        <div class="price-container">
+                            <i class="fa fa-inr"></i>
+                            <span>2520</span>
                         </div>
                     </div>
 
@@ -145,7 +215,7 @@
                 />
                 <div class="product-desc-container ">
                     <h4>
-                        Nike
+                        Nike KAISHI 2.0 Sneakers For Men
                     </h4>
                     <p>
                         Somethhing about the product
@@ -181,6 +251,7 @@
         </div>
 
     </div>
+    <script src="/bundle.js"></script>
 </body>
 
 </html>
