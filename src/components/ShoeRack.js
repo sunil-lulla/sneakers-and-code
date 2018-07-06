@@ -23,9 +23,7 @@ class ShoeRack extends React.Component {
 		fetch("https://api.myjson.com/bins/11upkk")
 			.then(data => data.json())
 			.then(data => {
-				console.log(data);
-				this.setState({ data2: "jakfsk" });
-				this.setupInitialState(data.json());
+				this.setupInitialState(data);
 			});
 	}
 	render() {

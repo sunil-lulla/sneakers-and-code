@@ -11,45 +11,31 @@
         }
 
         header {
-            background-color: transparent;
-            padding: 10px;
+            background-color: #1E88E5;
+            /* padding: 10px; */
             font-size: 19px;
             box-shadow: 4px 1px;
-            /* border: 1px solid purple; */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 60px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
         }
 
-        #logo-container {
-            /* border: 1px solid grey; */
-            transform: rotate(-35deg);
-        }
-
-        #logo-container {
-            float: left;
-            z-index: -100;
-            margin-top: -24px;
-            margin-right: -20px;
-        }
-
-        #tagline-container {
-            vertical-align: middle;
-            border: 1px solid transparent;
-            display: inline;
-            z-index: 999;
-        }
-
-        #amp-container {
-            text-align: center;
-            vertical-align: middle;
-            height: 30px;
-            width: 30px;
-            background-color: red;
-            border-radius: 50%;
-            display: inline-block;
-            font-size: 24px;
+        .tagline-container {
+            margin-top: 18px;
+            margin-left: 10px;
+            clear: both;
+            font-size: 18px;
+            text-transform: uppercase;
+            vertical-align: middle !important;
+            color: #ffffff;
+            /* border: 1px solid red; */
         }
 
         #products-container {
-            margin: 20px auto;
+            margin: 100px auto;
             max-width: 930px;
             /* border: 1px solid red; */
             padding: 10px;
@@ -104,150 +90,67 @@
             font-size: 14px;
             font-weight: bold;
         }
+
+        .skeleton-container {
+            margin: auto;
+            width: 500px;
+            height: 600px;
+            background-image: radial-gradient( circle 0px at 50px 50px, lightgray 99%, transparent 0),
+            linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80%),
+            linear-gradient( lightgray 20px, transparent 0),
+            linear-gradient( lightgray 20px, transparent 0),
+            linear-gradient( lightgray 20px, transparent 0),
+            linear-gradient( lightgray 20px, transparent 0);
+            background-repeat: repeat-y;
+
+            background-size: 100px 200px, /* circle */
+            50px 200px, /* highlight */
+            150px 200px,
+            350px 200px,
+            300px 200px,
+            250px 200px;
+
+            background-position: 0 0, /* circle */
+            0 0, /* highlight */
+            120px 0,
+            120px 40px,
+            120px 80px,
+            120px 120px;
+
+            animation: shine 1s infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 0 0,
+                100% 0, /* move highlight to right */
+                120px 0,
+                120px 40px,
+                120px 80px,
+                120px 120px;
+            }
+        }
     </style>
 
 </head>
 
 <body>
-    <div id="main">
-
-    </div>
-
     <div id="container">
         <header>
-            <div>
-                <img id="logo-container" height="100" width="150" src="./logo.jpg" />
-            </div>
 
-            <div id="tagline-container">
-                <p>
-                    Sneakers
-                    <span id="amp-container">
-                        &amp;
-                    </span>
-                    Code
-                </p>
+            <div class="tagline-container">
+                Code 'n' Sneakers
             </div>
         </header>
 
+
+        <!-- <div class="skeleton-container">
+
+        </div> -->
+
         <div id="products-container">
 
-            <div class="product">
-                <img class="product-lst-banner-container" src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70"
-                />
-                <div class="product-desc-container">
-                    <h5>
-                        Nike NIKE COURT ROYALE Sneakers For Men
-                    </h5>
-                    <div>
-                        <div class="rating-container">
-                            <span class="rating-star-container">
-                                3.9
-                                <i class="fa fa-star "></i>
-                            </span>
-                            <span class="rating-by-container">
-                                &nbsp; (311)
-                            </span>
-                        </div>
-                        <div class="price-container">
-                            <i class="fa fa-inr"></i>
-                            <span>2520</span>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-
-            <div class="product">
-                <img class="product-lst-banner-container" src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70"
-                />
-                <div class="product-desc-container">
-                    <h5>
-                        Nike NIKE COURT ROYALE Sneakers For Men
-                    </h5>
-                    <div>
-                        <div class="rating-container">
-                            <span class="rating-star-container">
-                                3.9
-                                <i class="fa fa-star "></i>
-                            </span>
-                            <span class="rating-by-container">
-                                &nbsp; (311)
-                            </span>
-                        </div>
-                        <div class="price-container">
-                            <i class="fa fa-inr"></i>
-                            <span>2520</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="product">
-                <img class="product-lst-banner-container" src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70"
-                />
-                <div class="product-desc-container">
-                    <h5>
-                        Nike NIKE COURT ROYALE Sneakers For Men
-                    </h5>
-                    <div>
-                        <div class="rating-container">
-                            <span class="rating-star-container">
-                                3.9
-                                <i class="fa fa-star "></i>
-                            </span>
-                            <span class="rating-by-container">
-                                &nbsp; (311)
-                            </span>
-                        </div>
-                        <div class="price-container">
-                            <i class="fa fa-inr"></i>
-                            <span>2520</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="product ">
-                <img src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70 "
-                />
-                <div class="product-desc-container ">
-                    <h4>
-                        Nike KAISHI 2.0 Sneakers For Men
-                    </h4>
-                    <p>
-                        Somethhing about the product
-                    </p>
-                </div>
-            </div>
-
-            <div class="product ">
-                <img src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70 "
-                />
-                <div class="product-desc-container ">
-                    <h4>
-                        Nike
-                    </h4>
-                    <p>
-                        Somethhing about the product
-                    </p>
-                </div>
-            </div>
-
-            <div class="product ">
-                <img src="https://rukminim1.flixcart.com/image/250/250/jcz4e4w0/shoe/q/m/z/liteforce-iii-mid-ni-8-nike-dark-grey-bright-cactus-black-white-original-imaffzhzwhc8z8fh.jpeg?q=70 "
-                />
-                <div class="product-desc-container ">
-                    <h4>
-                        Nike
-                    </h4>
-                    <p>
-                        Somethhing about the product
-                    </p>
-                </div>
-            </div>
         </div>
 
     </div>

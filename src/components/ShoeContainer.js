@@ -17,15 +17,22 @@ class ShoeContainer extends React.Component {
 				<div className="product-desc-container">
 					<h5>{this.props.title}</h5>
 					<div>
-						<div className="rating-container">
-							<span className="rating-star-container">
-								{this.props.starRating}
-								<i className="fa fa-star " />
-							</span>
-							<span className="rating-by-container">
-								&nbsp; ({this.props.starRatingBy})
-							</span>
-						</div>
+						{this.props.starRating !== "0" &&
+							this.props.starRating !== 0 && (
+								<div className="rating-container">
+									<span className="rating-star-container">
+										{this.props.starRating}
+										<i className="fa fa-star " />
+									</span>
+									{this.props.starRatingBy !== "0" &&
+										(this.props.starRatingBy !== 0 && (
+											<span className="rating-by-container">
+												&nbsp; ({this.props.starRatingBy})
+											</span>
+										))}
+								</div>
+							)}
+
 						<div className="price-container">
 							<i className="fa fa-inr" />
 							<span>{this.props.price}</span>
